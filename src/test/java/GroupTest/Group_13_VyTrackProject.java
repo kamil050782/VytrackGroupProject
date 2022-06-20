@@ -14,9 +14,18 @@ public class Group_13_VyTrackProject {
         //2.Login with right credentials
         WebElement inputUserName=Driver.getDriver().findElement(By.cssSelector("input[id='prependedInput']"));
         inputUserName.sendKeys(ConfigurationReader.getProperty("username"));
+
         WebElement inputPassword=Driver.getDriver().findElement(By.xpath("//input[@id='prependedInput2']"));
         inputPassword.sendKeys(ConfigurationReader.getProperty("password"));
+
         WebElement loginBtn=Driver.getDriver().findElement(By.cssSelector("button[id='_submit']"));
         loginBtn.click();
+
+        //3.Hover over Fleet module
+
+        WebElement fleetBtn=Driver.getDriver().findElement(By.xpath("//li[@class='dropdown dropdown-level-1']/a/span/i[@class='fa-asterisk menu-icon']"));
+        JavascriptExecutor executor = (JavascriptExecutor)Driver.getDriver();
+        executor.executeScript("arguments[0].click();", fleetBtn);
+
     }
 }
