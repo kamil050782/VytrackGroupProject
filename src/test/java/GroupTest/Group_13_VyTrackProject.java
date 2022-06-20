@@ -49,5 +49,8 @@ public class Group_13_VyTrackProject {
         corolla.sendKeys("Corolla");
         corolla.isDisplayed();
 
+        //8.delete on the field next to "Model"  text
+        toyota.clear();
+
     }
 }
