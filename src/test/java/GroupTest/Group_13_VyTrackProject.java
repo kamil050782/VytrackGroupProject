@@ -32,5 +32,11 @@ public class Group_13_VyTrackProject {
         JavascriptExecutor executor1 = (JavascriptExecutor)Driver.getDriver();
         executor1.executeScript("arguments[0].click();", vehicleModelPage);
 
+
+        //5.Create vehicles models
+        WebElement createVehicle=Driver.getDriver().findElement(By.linkText("Create Vehicles Model"));
+        JavascriptExecutor executor2 = (JavascriptExecutor)Driver.getDriver();
+        executor2.executeScript("arguments[0].click();", createVehicle);
+
     }
 }
