@@ -52,5 +52,10 @@ public class Group_13_VyTrackProject {
         //8.delete on the field next to "Model"  text
         toyota.clear();
 
+        //9.delete on the field next to "Make"  text
+        corolla.clear();
+
+        Driver.closeDriver();
+
     }
 }
