@@ -44,5 +44,10 @@ public class Group_13_VyTrackProject {
         toyota.sendKeys("Toyota");
         toyota.isDisplayed();
 
+        //7.Make "Corolla"
+        WebElement corolla=Driver.getDriver().findElement(By.xpath("//input[@name='custom_entity_type[Make]']"));
+        corolla.sendKeys("Corolla");
+        corolla.isDisplayed();
+
     }
 }
