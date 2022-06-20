@@ -38,5 +38,10 @@ public class Group_13_VyTrackProject {
         JavascriptExecutor executor2 = (JavascriptExecutor)Driver.getDriver();
         executor2.executeScript("arguments[0].click();", createVehicle);
 
+        //7.Make "Corolla"
+        WebElement corolla=Driver.getDriver().findElement(By.xpath("//input[@name='custom_entity_type[Make]']"));
+        corolla.sendKeys("Corolla");
+        corolla.isDisplayed();
+
     }
 }
