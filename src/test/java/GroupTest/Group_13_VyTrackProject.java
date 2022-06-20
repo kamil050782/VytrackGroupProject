@@ -1,6 +1,7 @@
 package GroupTest;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 import utilities.ConfigurationReader;
@@ -26,6 +27,7 @@ public class Group_13_VyTrackProject {
         WebElement fleetBtn=Driver.getDriver().findElement(By.xpath("//li[@class='dropdown dropdown-level-1']/a/span/i[@class='fa-asterisk menu-icon']"));
         JavascriptExecutor executor = (JavascriptExecutor)Driver.getDriver();
         executor.executeScript("arguments[0].click();", fleetBtn);
+
 
     }
 }
