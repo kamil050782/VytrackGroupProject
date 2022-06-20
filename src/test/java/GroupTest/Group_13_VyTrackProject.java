@@ -38,5 +38,24 @@ public class Group_13_VyTrackProject {
         JavascriptExecutor executor2 = (JavascriptExecutor)Driver.getDriver();
         executor2.executeScript("arguments[0].click();", createVehicle);
 
+        //6.Model "Toyota"
+
+        WebElement toyota=Driver.getDriver().findElement(By.cssSelector("input[name='custom_entity_type[ModelName]']"));
+        toyota.sendKeys("Toyota");
+        toyota.isDisplayed();
+
+        //7.Make "Corolla"
+        WebElement corolla=Driver.getDriver().findElement(By.xpath("//input[@name='custom_entity_type[Make]']"));
+        corolla.sendKeys("Corolla");
+        corolla.isDisplayed();
+
+        //8.delete on the field next to "Model"  text
+        toyota.clear();
+
+        //9.delete on the field next to "Make"  text
+        corolla.clear();
+
+        Driver.closeDriver();
+
     }
 }
