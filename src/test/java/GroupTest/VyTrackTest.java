@@ -32,7 +32,7 @@ public void test() throws InterruptedException {
     JavascriptExecutor executor = (JavascriptExecutor)Driver.getDriver();
     executor.executeScript("arguments[0].click();", vytrackPage.fleetBtn);
 
-    //4.Select "Vehicles Model "
+    //4.Select "Vehicles Model"
 
     JavascriptExecutor executor1 = (JavascriptExecutor)Driver.getDriver();
     executor1.executeScript("arguments[0].click();", vytrackPage.vehicleModelPageBtn);
