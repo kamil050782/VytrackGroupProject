@@ -28,7 +28,6 @@ public void test() throws InterruptedException {
 
     //3.Hover over Fleet module
 
-
     JavascriptExecutor executor = (JavascriptExecutor)Driver.getDriver();
     executor.executeScript("arguments[0].click();", vytrackPage.fleetBtn);
 
